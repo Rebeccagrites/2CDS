@@ -1,1 +1,20 @@
 
+<!--Seçao banner1 é a parte do paragrafo1 da pagina-->
+<section class= "banner1">
+<img class="escola.image"src="banner.png"alt="banner da escola">
+<|section>
+
+(
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+)
+body(
+    front family:"poppins",sans-serif
+)
+header(
+    background-color:#424e61;
+    color:white;
+    width:100%
+    padding:20px;
+)
