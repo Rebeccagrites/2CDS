@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 10;
     padding:10
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@ body {
 header {
     background-color: #424e61;
     color: white;
-    width: 90%;
+    width: 100%;
     padding:50px;
     margin: 0 auto;
 }
@@ -42,7 +42,7 @@ header {
 .sociais {
     display: flex;
     justify-content: flex-end;
-    width: 70%;
+    width: 160%;
     gap: 20px;  /* Adicionando espaço entre os ícones sociais */
 }
 
@@ -69,7 +69,7 @@ header {
 
 .estudante-imagem {
     width: 120px;
-    border-radius: 100%;  /* Adicionando borda arredondada nas imagens */
+    border-radius: 300%;  /* Adicionando borda arredondada nas imagens */
 }
 
 .estudante-icone {
