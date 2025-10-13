@@ -166,11 +166,11 @@ footer a {
 
     .titulo_site {
         font-size: 2rem;
-        width: 100%;
+        width: 150%;
     }
 
     .sociais {
-        width: 100%;
+        width: 150%;
         justify-content: center;
         gap: 15px;
     }
