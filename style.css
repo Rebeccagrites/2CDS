@@ -1,183 +1,191 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    body{
+}
+
+body {
     font-family: "Poppins", sans-serif;
-    }
-    header{
+    background-color: #f9f9f9;
+}
+
+header {
     background-color: #424e61;
     color: white;
     width: 90%;
     padding: 20px;
-    }
-    .cabecalho-itens{
+    margin: 0 auto;
+}
+
+.cabecalho-itens {
     max-width: 1550px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    }
-    .cabecalho-imagem{
-    width: 10%;
+    justify-content: space-between;
+}
+
+.cabecalho-imagem {
+    width: 8%;  /* Ajustando a largura do logo */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    }
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
 }
 
-    .titulo_site{
-    padding: 50px;
+.titulo_site {
+    font-size: 2.5rem;  /* Ajustando o tamanho da fonte */
+    padding: 20px 0;
     text-align: center;
-    width: 50%;
-    font: 30px;
-    }
-    .sociais{
+    flex: 1;
+}
+
+.sociais {
     display: flex;
     justify-content: flex-end;
     width: 25%;
-    padding-right: 30px;
-    }
-    .banner1{
+    gap: 20px;  /* Adicionando espaço entre os ícones sociais */
+}
+
+.sociais img {
+    width: 30px;  /* Ajustando o tamanho dos ícones sociais */
+}
+
+.banner1 {
     display: flex;
     justify-content: center;
-    }
-    .estudante_titulo{
-    padding: 50px;
+    padding: 20px 0;
+}
+
+.estudante_titulo {
+    font-size: 2rem;
+    padding: 50px 0;
     text-align: center;
-   
-    }
-    .estudante-nome{
+}
+
+.estudante-nome {
     text-align: center;
-    }
-    .estudante-imagem{
+    font-size: 1.2rem;  /* Ajustando o tamanho do nome do estudante */
+}
+
+.estudante-imagem {
     width: 120px;
-    }
-    .estudante-icone{
+    border-radius: 50%;  /* Adicionando borda arredondada nas imagens */
+}
+
+.estudante-icone {
     width: 38px;
     padding: 4px 8px;
-    }
-    .estudante{
-    background-image: background-color(#faae43);
+    margin: 5px;
+}
+
+.estudante {
+    background-color: #faae43; /* Corrigido o uso do background-color */
     padding: 24px 0;
-    }
-   
-    .estudante.div{
+}
+
+.estudante-div {
     text-align: center;
     padding: 24px 0;
-    }
-    .estudantes_todos{
+}
+
+.estudantes_todos {
     display: flex;
     justify-content: space-around;
-    }
-    .escola{
-    background-image: linear-gradient(#40A2E3,#7FC2EF);
+    flex-wrap: wrap;
+    gap: 30px;  /* Adicionando espaço entre as colunas */
+}
+
+.escola {
+    background-image: linear-gradient(#40A2E3, #7FC2EF);
     color: white;
     display: flex;
-    justify-content:center;
-    padding: 24px 0;
-    text-align:center;
-    display:block;
-    }
-    .escola-titulo{
-    padding: 50px;
+    justify-content: center;
+    padding: 40px 0;
     text-align: center;
-    }
-    .logo_rodape{
+}
+
+.escola-titulo {
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+.logo_rodape {
     height: 80px;
     padding: 12px 0;
-   
-    }
-   
-    .link{
+}
+
+.link {
     color: #ffffff;
     text-decoration: none;
-    }
-
-/* Carrossel */
-.carousel {
-    position: relative;
-    max-width: 80%;
-    margin: 40px auto;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-.carousel img {
-    width: 100%;
-    display: none;
-}
-.carousel img.active {
-    display: block;
-}
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-.carousel .prev { left: 10px; }
-.carousel .next { right: 10px; }
 
-
-
-/* Rodapé */
 footer {
     background: #002244;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 footer a {
     color: #00ccff;
     text-decoration: none;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;          /* centraliza verticalmente */
-  justify-content: flex-start;  /* mantém logo na esquerda */
-  gap: 15px;
+/* Seção sobre a turma */
+.sobre-turma {
+    text-align: center;
+    padding: 40px 0;
 }
 
-.logo img {
-  width: 100px;
-  height: auto;
-  display: block;
+.sobre-turma h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.header-text {
-  flex: 1;              /* ocupa todo espaço à direita da logo */
-  text-align: center;   /* centraliza texto horizontalmente */
+.btn-turma {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    background-color: #424e61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-
-/* Texto da turma */
-.header-text {
-  text-align: center;
-  display: center;
-   
-    justify-content: center;
-    align-items: center;
+.btn-turma:hover {
+    background-color: #353f4a;
 }
 
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .cabecalho-itens {
+        flex-direction: column;
+        align-items: center;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-header p {
-  margin: 5px 0 0;
-  font-size: 1.2rem;
-  font-weight: bold;
+    .titulo_site {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .sociais {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .estudantes_todos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .escola-titulo {
+        font-size: 1.2rem;
+    }
+
+    .btn-turma {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
 }
