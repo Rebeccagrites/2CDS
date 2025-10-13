@@ -1,6 +1,6 @@
 * {
-    margin: 10;
-    padding:10
+    margin: 10px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ header {
     background-color: #424e61;
     color: white;
     width: 100%;
-    padding:50px;
+    padding: 50px;
     margin: 0 auto;
 }
 
@@ -26,14 +26,14 @@ header {
 }
 
 .cabecalho-imagem {
-    width: 1000%;  /* Ajustando a largura do logo */
+    width: 120%;  /* Aumentando a largura do logo */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .titulo_site {
-    font-size: 2.5rem;  /* Ajustando o tamanho da fonte */
+    font-size: 3rem;  /* Aumentando o tamanho da fonte */
     padding: 20px 0;
     text-align: center;
     flex: 1;
@@ -42,12 +42,12 @@ header {
 .sociais {
     display: flex;
     justify-content: flex-end;
-    width: 160%;
+    width: 200px;
     gap: 20px;  /* Adicionando espaço entre os ícones sociais */
 }
 
 .sociais img {
-    width: 30px;  /* Ajustando o tamanho dos ícones sociais */
+    width: 35px;  /* Aumentando o tamanho dos ícones sociais */
 }
 
 .banner1 {
@@ -57,29 +57,29 @@ header {
 }
 
 .estudante_titulo {
-    font-size: 2rem;
+    font-size: 2.5rem;  /* Aumentando o título */
     padding: 50px 0;
     text-align: center;
 }
 
 .estudante-nome {
     text-align: center;
-    font-size: 1.2rem;  /* Ajustando o tamanho do nome do estudante */
+    font-size: 1.3rem;  /* Aumentando o nome do estudante */
 }
 
 .estudante-imagem {
-    width: 120px;
-    border-radius: 300%;  /* Adicionando borda arredondada nas imagens */
+    width: 150px;  /* Aumentando a largura das imagens dos estudantes */
+    border-radius: 50%;  /* Borda arredondada */
 }
 
 .estudante-icone {
-    width: 38px;
+    width: 40px;
     padding: 4px 8px;
     margin: 5px;
 }
 
 .estudante {
-    background-color: #9732f7; /* Corrigido o uso do background-color */
+    background-color: #9732f7;
     padding: 24px 0;
 }
 
@@ -178,6 +178,10 @@ footer a {
     .estudantes_todos {
         flex-direction: column;
         align-items: center;
+    }
+
+    .estudante-imagem {
+        width: 130px;  /* Ajustando o tamanho das imagens para telas menores */
     }
 
     .escola-titulo {
