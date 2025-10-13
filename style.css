@@ -26,7 +26,7 @@ header {
 }
 
 .cabecalho-imagem {
-    width: 150%;  /* Aumentando a largura do logo do cabeçalho */
+    width: 120%;  /* Aumentando a largura do logo */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -68,7 +68,7 @@ header {
 }
 
 .estudante-imagem {
-    width: 180px;  /* Aumentando a largura das imagens dos estudantes */
+    width: 150px;  /* Aumentando a largura das imagens dos estudantes */
     border-radius: 50%;  /* Borda arredondada */
 }
 
@@ -107,4 +107,89 @@ header {
 .escola-titulo {
     font-size: 1.5rem;
     padding: 20px 0;
+}
+
+.logo_rodape {
+    height: 80px;
+    padding: 12px 0;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer {
+    background: #002244;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+/* Seção sobre a turma */
+.sobre-turma {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.sobre-turma h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.btn-turma {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    background-color: #424e61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-turma:hover {
+    background-color: #353f4a;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .cabecalho-itens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo_site {
+        font-size: 2rem;
+        width: 150%;
+    }
+
+    .sociais {
+        width: 150%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .estudantes_todos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .estudante-imagem {
+        width: 130px;  /* Ajustando o tamanho das imagens para telas menores */
+    }
+
+    .escola-titulo {
+        font-size: 1.2rem;
+    }
+
+    .btn-turma {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
 }
