@@ -9,11 +9,11 @@
     header{
     background-color: #424e61;
     color: white;
-    width: 100%;
+    width: 90%;
     padding: 20px;
     }
     .cabecalho-itens{
-    max-width: 1980px;
+    max-width: 1550px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -25,6 +25,13 @@
     justify-content: flex-start;
     align-items: center;
     }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
     .titulo_site{
     padding: 50px;
     text-align: center;
@@ -92,3 +99,85 @@
     color: #ffffff;
     text-decoration: none;
     }
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    max-width: 80%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.carousel img {
+    width: 100%;
+    display: none;
+}
+.carousel img.active {
+    display: block;
+}
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+
+
+/* Rodapé */
+footer {
+    background: #002244;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;          /* centraliza verticalmente */
+  justify-content: flex-start;  /* mantém logo na esquerda */
+  gap: 15px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.header-text {
+  flex: 1;              /* ocupa todo espaço à direita da logo */
+  text-align: center;   /* centraliza texto horizontalmente */
+}
+
+
+/* Texto da turma */
+.header-text {
+  text-align: center;
+  display: center;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
