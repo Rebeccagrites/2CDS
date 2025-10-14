@@ -12,7 +12,7 @@ body {
 header {
     background-color: #424e61;
     color: white;
-    width: 100%;
+    width: 500%;
     padding: 50px;
     margin: 0 auto;
 }
@@ -26,7 +26,7 @@ header {
 }
 
 .cabecalho-imagem {
-    width: 120%;  /* Aumentando a largura do logo */
+    width: 500%;  /* Aumentando a largura do logo */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -69,7 +69,7 @@ header {
 
 .estudante-imagem {
     width: 150px;  /* Aumentando a largura das imagens dos estudantes */
-    border-radius: 50%;  /* Borda arredondada */
+    border-radius: 100%;  /* Borda arredondada */
 }
 
 .estudante-icone {
@@ -166,7 +166,7 @@ footer a {
 
     .titulo_site {
         font-size: 2rem;
-        width: 150%;
+        width: 250%;
     }
 
     .sociais {
