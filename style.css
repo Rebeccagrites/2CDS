@@ -113,3 +113,6 @@ text-align: center;
     color: #ffffff;
     text-decoration: none;
   }
+  .ocultar {
+    display: none; /* Esconde o conteúdo */
+}
