@@ -34,7 +34,7 @@ header {
 
 .titulo_site {
     font-size: 3rem;  /* Aumentando o tamanho da fonte */
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
     flex: 1;
 }
@@ -47,7 +47,7 @@ header {
 }
 
 .sociais img {
-    width: 35px;  /* Aumentando o tamanho dos ícones sociais */
+    width: 60px;  /* Aumentando o tamanho dos ícones sociais */
 }
 
 .banner1 {
