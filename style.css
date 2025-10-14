@@ -20,7 +20,7 @@
     justify-content: center;
     }
     .cabecalho-imagem{
-    width: 10%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -99,38 +99,6 @@ body {
     color: #ffffff;
     text-decoration: none;
     }
-
-/* Carrossel */
-.carousel {
-    position: relative;
-    max-width: 80%;
-    margin: 40px auto;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.carousel img {
-    width: 100%;
-    display: none;
-}
-.carousel img.active {
-    display: block;
-}
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-.carousel .prev { left: 10px; }
-.carousel .next { right: 10px; }
-
-
-
 /* Rodapé */
 footer {
     background: #002244;
