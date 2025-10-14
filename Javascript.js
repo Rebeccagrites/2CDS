@@ -1,4 +1,3 @@
-// Interação com o botão "Exibir Informações"
 const btnSobreTurma = document.getElementById("btnSobreTurma");
 const informacoes = document.getElementById("informacoes");
 
@@ -14,7 +13,6 @@ btnSobreTurma.addEventListener("click", function() {
         btnSobreTurma.innerHTML = "Ocultar Informações"; // Texto quando visível
     }
 });
-
 // Efeito de animação nos ícones sociais
 const iconesSociais = document.querySelectorAll('.sociais img');
 
