@@ -24,7 +24,7 @@
   }
  
   .cabecalho-imagem {
-    width: 6%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,7 +40,7 @@
   .sociais {
     display: flex;
     justify-content: flex-end;
-    width: 25%;
+    width: 40%;
     padding-right: 30px;
   }
  
@@ -59,7 +59,7 @@
   }
  
   .estudante-imagem {
-    width: 120px;
+    width: 200px;
   }
  
   .estudante-icone {
