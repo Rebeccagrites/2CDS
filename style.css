@@ -40,8 +40,8 @@
   .sociais {
     display: flex;
     justify-content: flex-end;
-    width: 40%;
-    padding-right: 30px;
+    width: 30%;
+    padding-right: 50px;
   }
  
   .banner1 {
