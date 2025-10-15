@@ -25,7 +25,7 @@ header {
 
 .cabecalho-imagem {
     width: 100%;  /* Aumenta a largura da imagem para 100% */
-    max-width: 1200px;  /* Limita o tamanho máximo da imagem */
+    height: auto;  /* Garante que a proporção da imagem seja mantida */
     display: flex;
     justify-content: flex-start;
     align-items: center;
