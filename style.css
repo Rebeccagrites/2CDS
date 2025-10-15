@@ -2,106 +2,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
- 
-  body {
+}
+
+body {
     font-family: "Poppins", sans-serif;
-  }
- 
-  header {
+}
+
+header {
     background-color: #424e61;
     color: white;
     width: 100%;
     padding: 20px;
-  }
- 
-  .cabecalho-itens {
-    max-width: 1980px;
+}
+
+.cabecalho-itens {
+    max-width: 100%;  /* Permite que ocupe a largura total da tela */
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
- 
-  .cabecalho-imagem {
-    width: 100%;
+}
+
+.cabecalho-imagem {
+    width: 100%;  /* Aumenta a largura da imagem para 100% */
+    max-width: 1200px;  /* Limita o tamanho máximo da imagem */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
- 
-  .titulo_site {
+}
+
+.titulo_site {
     padding: 50px;
     text-align: center;
     width: 70%;
     font-size: 30px;
-  }
- 
-  .sociais {
+}
+
+.sociais {
     display: flex;
     justify-content: flex-end;
     width: 30%;
     padding-right: 50px;
-  }
- 
-  .banner1 {
+}
+
+.banner1 {
     display: flex;
     justify-content: center;
-  }
- 
-  .estudante_titulo {
+}
+
+.estudante_titulo {
     padding: 50px;
     text-align: center;
-  }
- 
-  .estudante-nome {
+}
+
+.estudante-nome {
     text-align: center;
-  }
- 
-  .estudante-imagem {
+}
+
+.estudante-imagem {
     width: 200px;
-  }
- 
-  .estudante-icone {
+}
+
+.estudante-icone {
     width: 38px;
     padding: 4px 8px;
-  }
- 
-  .estudante {
+}
+
+.estudante {
     background-color: #ffffff;
     padding: 24px 0;
     text-align: center;
-  }
- 
-  .estudante-div {
+}
+
+.estudante-div {
     text-align: center;
     padding: 24px 0;
-  }
- 
-  .estudantes_todos {
+}
+
+.estudantes_todos {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
- 
-  .escola {
+}
+
+.escola {
     background-image: linear-gradient(#40A2E3, #297bb3);
     color: white;
     padding: 24px 0;
     text-align: center;
-  }
- 
-  .escola-titulo {
+}
+
+.escola-titulo {
     padding: 50px;
     text-align: center;
-  }
- 
-  .logo_rodape {
+}
+
+.logo_rodape {
     height: 80px;
     padding: 12px 0;
-  }
- 
-  .link {
+}
+
+.link {
     color: #ffffff;
     text-decoration: none;
-  }
+}
