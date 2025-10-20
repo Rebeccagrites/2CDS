@@ -15,35 +15,49 @@ header {
     padding: 20px;
 }
 
+/* 1. Otimização: Define uma largura máxima para o conteúdo e o centraliza */
 .cabecalho-itens {
-    max-width: 100%;  /* Permite que ocupe a largura total da tela */
+    max-width: 1200px; /* Define um limite para o conteúdo em telas grandes */
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Melhor que 'center' para um cabeçalho com 3 partes */
 }
 
+/* 2. CORREÇÃO CRÍTICA: Define um tamanho razoável para a imagem do cabeçalho */
 .cabecalho-imagem {
-    max-width: 300%;  /* Aumenta a largura da imagem para 100% */
-    height: auto;  /* Garante que a proporção da imagem seja mantida */
+    width: 100px; /* Define a largura do contêiner da imagem (Ex: 100px) */
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* Certifique-se de que a imagem dentro de .cabecalho-imagem tenha width: 100%; */
 }
 
+/* Sugestão Adicional: Estilo para a imagem real dentro do contêiner */
+.cabecalho-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 3. Otimização: O título ocupa o espaço restante (flex-grow: 1) */
 .titulo_site {
-    padding: 50px;
+    padding: 0 50px; /* Ajuste o padding para não ser excessivo */
     text-align: center;
-    width: 70%;
+    flex-grow: 1; /* Ocupa todo o espaço disponível no meio */
     font-size: 30px;
 }
 
+/* 4. Otimização: As sociais mantêm seu tamanho e não encolhem */
 .sociais {
     display: flex;
     justify-content: flex-end;
-    width: 30%;
-    padding-right: 50px;
+    /* Não precisa de width fixo se usar flex-grow no título */
+    flex-shrink: 0; /* Evita que os ícones encolham */
+    padding-right: 20px; /* Ajuste o padding para ser mais consistente */
 }
+
+/* O restante do código foi mantido, pois não continha erros lógicos */
 
 .banner1 {
     display: flex;
