@@ -18,7 +18,7 @@
             // Remove a transformação para que o elemento volte ao normal
             elemento.style.transform = 'none';
         });
-    }
+   }
 
     // --- Seleção dos Elementos e Aplicação do Efeito ---
 
