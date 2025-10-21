@@ -1,42 +1,24 @@
-const btnSobreTurma = document.getElementById("btnSobreTurma");
-const informacoes = document.getElementById("informacoes");
+// Função para adicionar e remover o efeito de escala (hover)
+function aplicarEfeitoHover(elemento) {
+    // Adiciona o evento para quando o mouse entra no elemento
+    elemento.addEventListener('mouseenter', function() {
+        elemento.classList.add('hover-scale');
+    });
 
-// 1. Funcionalidade Exibir/Ocultar
-btnSobreTurma.addEventListener("click", function() {
-    // Alternando a visibilidade usando a classe "ocultar" (mantido, pois é a melhor prática)
-    informacoes.classList.toggle("ocultar");
+    // Adiciona o evento para quando o mouse sai do elemento
+    elemento.addEventListener('mouseleave', function() {
+        elemento.classList.remove('hover-scale');
+    });
+}
 
-    // Alterando o texto do botão conforme a visibilidade
-    if (informacoes.classList.contains("ocultar")) {
-        // Se a classe 'ocultar' está presente (informações escondidas)
-        btnSobreTurma.innerHTML = "Exibir Informações";
-    } else {
-        // Se a classe 'ocultar' não está presente (informações visíveis)
-        btnSobreTurma.innerHTML = "Ocultar Informações";
-    }
-});
+// 1. Aplicar em todas as imagens de estudantes
+const imagensEstudantes = document.querySelectorAll('.estudante-imagem');
+imagensEstudantes.forEach(aplicarEfeitoHover);
 
-// 2. Efeito de animação nos ícones sociais
-const iconesSociais = document.querySelectorAll('.sociais img');
+// 2. Aplicar em todos os ícones sociais do cabeçalho
+const iconesSociaisCabecalho = document.querySelectorAll('.sociais-icone');
+iconesSociaisCabecalho.forEach(aplicarEfeitoHover);
 
-// **REMOVIDA a manipulação direta do style (mouseover/mouseout)**.
-// É melhor fazer o efeito de hover *diretamente no CSS* usando a pseudo-classe :hover.
-// Se você *quisesse* usar JS, faria a mesma coisa com classes.
-// O código para os ícones sociais pode ser REMOVIDO do JS se você usar CSS :hover.
-
-
-// 3. Alteração no texto do título
-const tituloSite = document.querySelector('.titulo_site');
-
-// Definindo o comportamento ao clicar no título
-tituloSite.addEventListener("click", () => {
-    // Alterna a classe que define o estilo e texto alternativo
-    tituloSite.classList.toggle("titulo_alterado");
-
-    // **Melhoria**: Alterna o texto do título
-    if (tituloSite.classList.contains("titulo_alterado")) {
-        tituloSite.innerHTML = "Bem-vindo à Turma!";
-    } else {
-        tituloSite.innerHTML = "Clique para alterar o título!";
-    }
-});
+// 3. Aplicar em todos os ícones sociais das fichas de estudante
+const iconesEstudantes = document.querySelectorAll('.estudante-icone');
+iconesEstudantes.forEach(aplicarEfeitoHover);
