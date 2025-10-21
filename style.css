@@ -1,122 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+body{
+  font-family: "Poppins", sans-serif;
 }
 
-header {
-    background-color: #424e61;
-    color: white;
-    width: 100%;
-    padding: 20px;
-}
+  header{
+     background-color: #424e61;
+     color: white;
+     width:100%;
+     padding: 20px;
 
-/* 1. Otimização: Define uma largura máxima para o conteúdo e o centraliza */
-.cabecalho-itens {
-    max-width: 1200px; /* Define um limite para o conteúdo em telas grandes */
+  }
+.cabecalho-itens{
+    max-width: 1980px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Melhor que 'center' para um cabeçalho com 3 partes */
-}
+    justify-content: center;
 
-/* 2. CORREÇÃO CRÍTICA: Define um tamanho razoável para a imagem do cabeçalho */
-.cabecalho-imagem {
-    width: 100px; /* Define a largura do contêiner da imagem (Ex: 100px) */
-    height: auto;
+.cabecalho-itens{
+   max-width: 1980px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.cabecalho-imagem{
+    width: 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* Certifique-se de que a imagem dentro de .cabecalho-imagem tenha width: 100%; */
 }
-
-/* Sugestão Adicional: Estilo para a imagem real dentro do contêiner */
-.cabecalho-imagem img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* 3. Otimização: O título ocupa o espaço restante (flex-grow: 1) */
-.titulo_site {
-    padding: 0 50px; /* Ajuste o padding para não ser excessivo */
+.titulo_site{
+    padding: 50px;
     text-align: center;
-    flex-grow: 1; /* Ocupa todo o espaço disponível no meio */
-    font-size: 30px;
+    width: 50%;
+    font: 30%px;
 }
-
-/* 4. Otimização: As sociais mantêm seu tamanho e não encolhem */
-.sociais {
+  .sociais{
     display: flex;
     justify-content: flex-end;
-    /* Não precisa de width fixo se usar flex-grow no título */
-    flex-shrink: 0; /* Evita que os ícones encolham */
-    padding-right: 20px; /* Ajuste o padding para ser mais consistente */
+    width: 25%;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font: 30px;
 }
-
-/* O restante do código foi mantido, pois não continha erros lógicos */
-
-.banner1 {
-    display: flex;
-    justify-content: center;
+.banner1{
+   display: flex;
+   justify-content: center;
 }
-
-.estudante_titulo {
+.estudante_titulo{
     padding: 50px;
     text-align: center;
 }
 
-.estudante-nome {
+.estudante-nome{
     text-align: center;
 }
-
-.estudante-imagem {
-    width: 200px;
+.estudante-imagem{
+   width: 120px;
 }
 
-.estudante-icone {
-    width: 38px;
-    padding: 4px 8px;
+.estudante-imagem{
+width: 120px;
 }
 
-.estudante {
-    background-color: #ffffff;
-    padding: 24px 0;
-    text-align: center;
-}
+  .estudante-icone{
+     width: 38px;
+     padding: 4px 8px;
+  }
 
-.estudante-div {
-    text-align: center;
-    padding: 24px 0;
-}
+  .estudante{
+      background-image: background-color(faae43);
+      padding: 24px 0;
+  }
 
-.estudantes_todos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.escola {
-    background-image: linear-gradient(#40A2E3, #297bb3);
+  .estudante.div{
+      text-align: center;
+      padding: 24px 0;
+  }
+  .estudantes_todos{
+       display: flex;
+      justify-content: space-around;
+  }
+.escola{
+    background_image: linear-gradient(#40A2E3,#7FC2EF)
     color: white;
+    display: flex;
+    justify-content:center;
     padding: 24px 0;
-    text-align: center;
-}
+    text-align:center;
+    display:block;
 
-.escola-titulo {
-    padding: 50px;
-    text-align: center;
 }
-
-.logo_rodape {
-    height: 80px;
+ .escola-titulo{
+    padding: 50-x;
+    text-align: center;
+    display:block;
+}
+ .logo_rodape{
+    heigth: 80px;
     padding: 12px 0;
-}
-
-.link {
-    color: #ffffff;
-    text-decoration: none;
-}
+ }
+  .link{
+       color: #ffffff;
+      text-decoration: none;
+  }
