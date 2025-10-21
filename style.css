@@ -1,144 +1,115 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+body{
+  font-family: "Poppins", sans-serif;
 }
 
-header {
-    background-color: #424e61;
-    color: white;
-    width: 100%;
-    padding: 20px 0; /* Padding vertical, o horizontal será controlado pelo cabecalho-itens */
-}
+  header{
+     background-color: #424e61;
+     color: white;
+     width:100%;
+     padding: 20px;
 
-/* O container principal do cabeçalho */
-.cabecalho-itens {
-    max-width: 1200px; /* Um max-width mais comum */
+  }
+.cabecalho-itens{
+    max-width: 1980px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui os itens */
-    padding: 0 20px; /* Padding nas laterais */
-}
-
-.cabecalho-imagem {
-    width: 80px; /* Tamanho fixo para melhor controle */
-    display: block;
-}
-
-.titulo_site {
-    text-align: center;
-    font-size: 30px; /* Unidade de medida correta */
-    width: auto; /* Ocupa o espaço necessário */
-}
-
-.sociais {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Espaçamento entre os ícones */
-}
-
-.sociais-icone {
-    width: 30px; /* Tamanho para os ícones sociais do cabeçalho */
-    /* Transição para o efeito de hover */
-    transition: transform 0.2s ease-in-out; 
-}
-
-/* Seção Banner */
-.banner1 {
-    display: flex;
     justify-content: center;
-    width: 100%;
+
+.cabecalho-itens{
+   max-width: 1980px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.cabecalho-imagem{
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.titulo_site{
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font: 30%px;
+}
+  .sociais{
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font: 30px;
+}
+.banner1{
+   display: flex;
+   justify-content: center;
+}
+.estudante_titulo{
+    padding: 50px;
+    text-align: center;
 }
 
-.escola-image {
-    width: 100%;
-    height: auto;
-    display: block;
+.estudante-nome{
+    text-align: center;
+}
+.estudante-imagem{
+   width: 120px;
 }
 
-/* Seção Estudantes */
-.estudante {
-    /* Cor de fundo corrigida */
-    background-color: #f0f0f0; 
+.estudante-imagem{
+width: 120px;
+}
+
+  .estudante-icone{
+     width: 38px;
+     padding: 4px 8px;
+  }
+
+  .estudante{
+      background-image: background-color(faae43);
+      padding: 24px 0;
+  }
+
+  .estudante.div{
+      text-align: center;
+      padding: 24px 0;
+  }
+  .estudantes_todos{
+       display: flex;
+      justify-content: space-around;
+  }
+.escola{
+    background_image: linear-gradient(#40A2E3,#7FC2EF)
+    color: white;
+    display: flex;
+    justify-content:center;
     padding: 24px 0;
-}
+    text-align:center;
+    display:block;
 
-.estudante.estudante-turma2 {
-    background-color: #faae43; /* Cor diferente para a segunda seção */
-    color: #424e61;
 }
-
-.estudante_titulo {
-    padding: 20px;
+ .escola-titulo{
+    padding: 50-x;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
+    display:block;
 }
-
-.estudantes-todos {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.estudante-div {
-    text-align: center;
-    padding: 24px;
-    width: 45%; /* Para ter espaço para 2 por linha */
-    max-width: 300px;
-}
-
-.estudante-imagem {
-    width: 100%; 
-    max-width: 150px;
-    border-radius: 50%; /* Imagem redonda */
-    margin-bottom: 10px;
-    /* Transição para o efeito de hover */
-    transition: transform 0.2s ease-in-out; 
-}
-
-.estudante-nome {
-    margin-bottom: 15px;
-}
-
-.estudante-icones {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.estudante-icone {
-    width: 38px;
-    padding: 4px;
-    /* Transição para o efeito de hover */
-    transition: transform 0.2s ease-in-out; 
-}
-
-/* Rodapé */
-.rodape {
-    background-color: #424e61;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.logo_rodape {
-    height: 60px;
+ .logo_rodape{
+    heigth: 80px;
     padding: 12px 0;
-}
 
-.rodape-texto {
-    margin: 0;
-}
+ }
+  .link{
+       color: #ffffff;
+      text-decoration: none;
+  }
 
-/* Classe CSS que será adicionada/removida pelo JavaScript */
-.hover-scale {
-    transform: scale(1.1);
-}
